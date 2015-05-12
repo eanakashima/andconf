@@ -58,7 +58,7 @@ h1, h2, h3 { font-family: "Bree Serif", "Open Sans", "Helvetica Neue", Helvetica
 .page-header {
   color: #fff;
   text-align: center;
-  background: #159957 url('../log.jpg') center 0;
+  background: #29371d url('../road.jpg') center 0;
 }
 
 @media screen and (min-width: 64em) {
