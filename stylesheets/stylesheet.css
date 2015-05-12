@@ -58,7 +58,7 @@ h1, h2, h3 { font-family: "Bree Serif", "Open Sans", "Helvetica Neue", Helvetica
 .page-header {
   color: #fff;
   text-align: center;
-  background: #159957 url('../log.jpg') center -250px;
+  background: #159957 url('../log.jpg') center 0;
 }
 
 @media screen and (min-width: 64em) {
@@ -233,6 +233,8 @@ h1, h2, h3 { font-family: "Bree Serif", "Open Sans", "Helvetica Neue", Helvetica
 
 .site-footer-credits {
   color: #819198; }
+
+.site-footer-credits a { color: inherit; }
 
 @media screen and (min-width: 64em) {
   .site-footer {
