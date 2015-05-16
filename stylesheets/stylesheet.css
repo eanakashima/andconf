@@ -10,7 +10,7 @@ body {
   color: #606c71; }
 
 a {
-  color: #1e6bb8;
+  color: #0082EE;
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
@@ -59,6 +59,19 @@ h1, h2, h3 { font-family: "Bree Serif", "Open Sans", "Helvetica Neue", Helvetica
   color: #fff;
   text-align: center;
   background: #29371d url('../road.jpg') center 0;
+}
+
+.project-name a {
+  color: #fff;
+}
+
+.project-name a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.project-name a:visited {
+  color: #fff;
 }
 
 @media screen and (min-width: 64em) {
