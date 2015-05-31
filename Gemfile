@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby "2.1.2"
 
 gem 'rails', '4.1.6'
 gem 'pg'
@@ -35,3 +35,6 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# For static asset serving and logs on Heroku:
+gem 'rails_12factor', group: :production
