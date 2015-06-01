@@ -14,3 +14,9 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore RubyMind config
+.idea
+
+# Ignore application configuration
+.env
