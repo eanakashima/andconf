@@ -39,6 +39,55 @@ h1, h2, h3 { font-family: "Bree Serif", "Open Sans", "Helvetica Neue", Helvetica
   border-color: rgba(255, 255, 255, 0.3);
 }
 
+.btn-green {
+  padding: 5px 10px;
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: white;
+  background-color: #159957;
+  border-color: rgba(255, 255, 255, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
+
+.btn-green:hover {
+  background-color: #0F693C;
+}
+
+.flash {
+  color: white;
+  padding: 15px;
+  border-radius: 0.3rem;
+}
+
+.error {
+  @extend .flash;
+  background-color: #FF4D00;
+}
+
+.success {
+  @extend .flash;
+  background-color: #159957;
+}
+
+.donate-field {
+  width: 70px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mb0 {
+  margin-bottom: 0;
+}
+
+.m0 {
+  margin: 0;
+}
+
 @media screen and (min-width: 64em) {
   .btn {
     padding: 0.75rem 1rem; } }
