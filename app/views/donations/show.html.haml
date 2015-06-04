@@ -6,6 +6,16 @@
     %a{:href => "index.html"} &amp;:conf
   %h2.project-tagline code retreat and unconference
 
+%nav
+  %ul
+    %li
+      = link_to "&:conf", "/index.html"
+    %li
+      = link_to "Attendee Details and FAQ", "/details.html"
+    %li
+      = link_to "Sponsorship", "/andconf_prospectus.pdf"
+    %li Donate
+
 %section.main-content
   - if flash[:error].present?
     .error
