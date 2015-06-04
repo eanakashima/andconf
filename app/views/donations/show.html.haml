@@ -6,6 +6,16 @@
     %a{:href => "index.html"} &amp;:conf
   %h2.project-tagline code retreat and unconference
 
+%nav
+  %ul
+    %li
+      = link_to "&:conf", "/index.html"
+    %li
+      = link_to "Attendee Details and FAQ", "/details.html"
+    %li
+      = link_to "Sponsorship", "/andconf_prospectus.pdf"
+    %li Donate
+
 %section.main-content
   - if flash[:error].present?
     .error
@@ -31,7 +41,7 @@
 
   = form_tag donations_path, method: "post", class: "donation-form" do
     = label_tag "donation_amount" do
-      = text_field_tag "donation_amount", "", placeholder: "100", type: "number", class: "donate-field js-stripe-amount"
+      = text_field_tag "donation_amount", "", placeholder: "100", type: "number", min: 1, max: 10000, class: "donate-field js-stripe-amount"
       dollars
       %br
     %button.js-stripe-button.mt10.btn-green Pay via Stripe
