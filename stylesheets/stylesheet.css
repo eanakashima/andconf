@@ -17,6 +17,22 @@ a {
 
 h1, h2, h3 { font-family: "Bree Serif", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
+nav ul {
+  display: block;
+  margin: 0;
+  height: 3.4rem;
+  border-bottom: 2px solid #aaa;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0;
+  padding: 1rem 2rem;
+  list-style-type: none;
+  font-weight: bold;
+}
+
 .btn {
   display: inline-block;
   margin-bottom: 1rem;
@@ -26,15 +42,67 @@ h1, h2, h3 { font-family: "Bree Serif", "Open Sans", "Helvetica Neue", Helvetica
   border-style: solid;
   border-width: 1px;
   border-radius: 0.3rem;
-  transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
   .btn + .btn {
-    margin-left: 1rem; }
+    margin-left: 1rem;
+  }
 
 .btn:hover {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.3); }
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn:hover {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-green {
+  padding: 5px 10px;
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: white;
+  background-color: #159957;
+  border-color: rgba(255, 255, 255, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
+
+.btn-green:hover {
+  background-color: #0F693C;
+}
+
+.flash {
+  color: white;
+  padding: 15px;
+  border-radius: 0.3rem;
+}
+
+.error {
+  color: white;
+  padding: 15px;
+  border-radius: 0.3rem;
+  background-color: #FF4D00;
+}
+
+.success {
+  color: white;
+  padding: 15px;
+  border-radius: 0.3rem;
+  background-color: #159957;
+}
+
+.donate-field { width: 70px; }
+.mt10 { margin-top: 10px; }
+.mb0 { margin-bottom: 0; }
+.m0 { margin: 0; }
 
 @media screen and (min-width: 64em) {
   .btn {
