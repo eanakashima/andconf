@@ -12,25 +12,43 @@ body {
 a {
   color: #0082EE;
   text-decoration: none; }
-  a:hover {
-    text-decoration: underline; }
+a:hover {
+  text-decoration: underline; }
 
 h1, h2, h3 { font-family: "Bree Serif", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+nav { border-bottom: 2px solid #aaa; }
 
 nav ul {
   display: block;
   margin: 0;
-  height: 3.4rem;
-  border-bottom: 2px solid #aaa;
-  text-align: center;
+  padding: 1rem 0;
+  list-style-type: none;
+  font-weight: bold;
 }
 
 nav ul li {
-  display: inline-block;
+  display: block;
   margin: 0;
-  padding: 1rem 2rem;
-  list-style-type: none;
-  font-weight: bold;
+  padding: 0.5rem 1rem;
+}
+
+@media screen and (min-width: 64em) {
+  nav ul {
+    margin: 0 auto;
+    max-width: 64rem;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: inline-block;
+    padding: 0.1rem 2rem;
+  }
+}
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+  nav ul { font-size: 1.1rem; }
+  nav ul li { padding: 0.5rem 4rem; }
 }
 
 .btn {
@@ -44,9 +62,9 @@ nav ul li {
   border-radius: 0.3rem;
   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 }
-  .btn + .btn {
-    margin-left: 1rem;
-  }
+.btn + .btn {
+  margin-left: 1rem;
+}
 
 .btn:hover {
   color: rgba(255, 255, 255, 0.8);
@@ -119,9 +137,9 @@ nav ul li {
     width: 100%;
     padding: 0.75rem;
     font-size: 0.9rem; }
-    .btn + .btn {
-      margin-top: 1rem;
-      margin-left: 0; } }
+  .btn + .btn {
+    margin-top: 1rem;
+    margin-left: 0; } }
 
 .page-header {
   color: #fff;
@@ -215,20 +233,20 @@ nav ul li {
   background-color: #f3f6fa;
   border: solid 1px #dce6f0;
   border-radius: 0.3rem; }
-  .main-content pre > code {
-    padding: 0;
-    margin: 0;
-    font-size: 0.9rem;
-    color: #567482;
-    word-break: normal;
-    white-space: pre;
-    background: transparent;
-    border: 0; }
+.main-content pre > code {
+  padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
+  color: #567482;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0; }
 .main-content .highlight {
   margin-bottom: 1rem; }
-  .main-content .highlight pre {
-    margin-bottom: 0;
-    word-break: normal; }
+.main-content .highlight pre {
+  margin-bottom: 0;
+  word-break: normal; }
 .main-content .highlight pre, .main-content pre {
   padding: 0.8rem;
   overflow: auto;
@@ -245,8 +263,8 @@ nav ul li {
   word-wrap: normal;
   background-color: transparent;
   border: 0; }
-  .main-content pre code:before, .main-content pre code:after, .main-content pre tt:before, .main-content pre tt:after {
-    content: normal; }
+.main-content pre code:before, .main-content pre code:after, .main-content pre tt:before, .main-content pre tt:after {
+  content: normal; }
 .main-content ul, .main-content ol {
   margin-top: 0; }
 .main-content blockquote {
@@ -254,31 +272,31 @@ nav ul li {
   margin-left: 0;
   color: #819198;
   border-left: 0.3rem solid #dce6f0; }
-  .main-content blockquote > :first-child {
-    margin-top: 0; }
-  .main-content blockquote > :last-child {
-    margin-bottom: 0; }
+.main-content blockquote > :first-child {
+  margin-top: 0; }
+.main-content blockquote > :last-child {
+  margin-bottom: 0; }
 .main-content table {
   display: block;
   width: 100%;
   overflow: auto;
   word-break: normal;
   word-break: keep-all; }
-  .main-content table th {
-    font-weight: bold; }
-  .main-content table th, .main-content table td {
-    padding: 0.5rem 1rem;
-    border: 1px solid #e9ebec; }
+.main-content table th {
+  font-weight: bold; }
+.main-content table th, .main-content table td {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e9ebec; }
 .main-content dl {
   padding: 0; }
-  .main-content dl dt {
-    padding: 0;
-    margin-top: 1rem;
-    font-size: 1rem;
-    font-weight: bold; }
-  .main-content dl dd {
-    padding: 0;
-    margin-bottom: 1rem; }
+.main-content dl dt {
+  padding: 0;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: bold; }
+.main-content dl dd {
+  padding: 0;
+  margin-bottom: 1rem; }
 .main-content hr {
   height: 2px;
   padding: 0;
