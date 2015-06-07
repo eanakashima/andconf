@@ -17,14 +17,19 @@ a {
 
 h1, h2, h3 { font-family: "Bree Serif", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-nav { border-bottom: 2px solid #aaa; }
+nav {
+  background-color: #159957;
+}
 
 nav ul {
   display: block;
   margin: 0;
   padding: 1rem 0;
   list-style-type: none;
-  font-weight: bold;
+}
+
+nav a {
+  color: white;
 }
 
 nav ul li {
