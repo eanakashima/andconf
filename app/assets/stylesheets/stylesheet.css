@@ -70,6 +70,16 @@ nav ul li {
 .sponsor-logo-c5 { width: 130px; }
 .sponsor-logo-stripe { width: 110px; }
 
+.bio {
+  clear: left;
+}
+
+.bio img {
+  width: 100px;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
 .btn {
   display: inline-block;
   margin-bottom: 1rem;

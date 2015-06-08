@@ -54,8 +54,27 @@
     = link_to "contact us", "mailto:info@andconf.io"
     if we can help find a custom sponsorship opportunity that's right for you.
   %h2 Contact
-  %p
-    Questions? Contact us at #{ mail_to "info@andconf.io" }.
+  %p Questions? Contact the conference organizers at #{ mail_to "info@andconf.io" }.
+  %h2 About the Organizers
+  %p.bio
+    = image_tag "lillie.jpg", alt: "Lillie Chilen"
+    = link_to "Lillie Chilen", "https://twitter.com/lilliealbert"
+    is a software engineer at Omada Health and a veteran open source event
+    organizer. She chairs the RailsBridge board and is the CTO of Double Union, a feminist
+    hacker/makerspace in San Francisco.
+  %p.bio
+    = image_tag "stella.jpg", alt: "Stella Cotton"
+    = link_to "Stella Cotton", "https://twitter.com/practice_cactus"
+    is a software engineer and project lead at Indiegogo. Coming to
+    software after six years in the Financial sector, she’s passionate about building robust
+    payments systems and diverse teams.
+  %p.bio
+    = image_tag "emily.jpg", alt: "Emily Nakashima"
+    = link_to "Emily Nakashima", "https://twitter.com/eanakashima"
+    is a software engineer at GitHub and a volunteer with RailsBridge.
+    She writes and speaks at conferences on the topics of web performance, client-side
+    monitoring, javascript patterns, and supporting diversity in technical organizations.
+
 
   %footer.site-footer
     %span.site-footer-credits
