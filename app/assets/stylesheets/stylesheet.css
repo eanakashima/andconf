@@ -1,5 +1,4 @@
-* {
-  box-sizing: border-box; }
+* { box-sizing: border-box; }
 
 body {
   padding: 0;
@@ -55,6 +54,21 @@ nav ul li {
   nav ul { font-size: 1.1rem; }
   nav ul li { padding: 0.5rem 4rem; }
 }
+
+.sponsor-logos {
+  font-weight: bold;
+}
+.sponsor-logos img {
+  padding: 1.2rem 0 0 1rem;
+  vertical-align: middle;
+}
+.sponsor-logo-mailkimp {
+  display: block;
+  width: 250px;
+  margin: 0 10px;
+}
+.sponsor-logo-c5 { width: 130px; }
+.sponsor-logo-stripe { width: 110px; }
 
 .btn {
   display: inline-block;

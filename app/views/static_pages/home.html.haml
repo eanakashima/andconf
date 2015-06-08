@@ -41,11 +41,18 @@
     See the #{ link_to "Attendee Details and FAQ", details_path } for full details about what
     to bring, how to get there, and where we'll be.
 
-  %h2 Sponsorship
+  %h2 Sponsors
+  %p A huge thank you to our generous sponsors for helping to make &:conf possible:
+  %p.sponsor-logos
+    = image_tag "mailchimp.png", alt: "Mail Chimp", class: "sponsor-logo-mailkimp"
+    = image_tag "c5-logo-vertical.png", alt: "Carbon Five", class: "sponsor-logo-c5"
+    = image_tag "stripe.png", alt: "Stripe", class: "sponsor-logo-stripe"
   %p
-    Check out our
-    %a{:href => "/andconf_prospectus.pdf"} Sponsorship Prospectus
-    for exciting sponsorship opportunities.
+    Interested in sponsoring? Check out our
+    = link_to "sponsorship prospectus", "/andconf_prospectus.pdf"
+    or
+    = link_to "contact us", "mailto:info@andconf.io"
+    if we can help find a custom sponsorship opportunity that's right for you.
   %h2 Contact
   %p
     Questions? Contact us at #{ mail_to "info@andconf.io" }.
