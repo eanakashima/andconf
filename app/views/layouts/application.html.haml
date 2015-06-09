@@ -1,7 +1,8 @@
 !!!
 %html
   %head
-    %title Andconf
+    %title
+      = content_for_title_tag || "&:conf (AndConf) code retreat and unconference"
     - # Fetch fonts in markup instead of importing from CSS so they load faster
     = stylesheet_link_tag '//fonts.googleapis.com/css?family=Open+Sans:400,700', media: 'all'
     = stylesheet_link_tag '//fonts.googleapis.com/css?family=Bree+Serif', media: 'all'
@@ -18,7 +19,7 @@
         %li
           = link_to "Sponsorship", "/andconf_prospectus.pdf"
         %li
-          = link_to "Donate", "https://www.andconf.io/donations"
+          = link_to "Donate", donations_path
 
     = yield
 
