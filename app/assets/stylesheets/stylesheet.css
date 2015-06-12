@@ -62,13 +62,20 @@ nav ul li {
   padding: 1.2rem 0 0 1rem;
   vertical-align: middle;
 }
-.sponsor-logo-mailkimp {
-  display: block;
-  width: 250px;
-  margin: 0 10px;
+img.sponsor-logo-mov {
+  float: left;
+  width: 220px;
+  margin: 0 15px 0 0;
+  padding: 1.5rem 0 0 0;
 }
-.sponsor-logo-c5 { width: 130px; }
-.sponsor-logo-stripe { width: 110px; }
+img.sponsor-logo-mailkimp {
+  display: block;
+  width: 255px;
+}
+img.sponsor-logo-c5 { width: 124px; padding: 0 0 0 0.5rem; }
+img.sponsor-logo-omada { width: 138px; padding: 0; }
+
+img.sponsor-logo-stripe { width: 80px; padding: 0.2rem 0 0 0.4rem; }
 
 .bio {
   clear: left;
