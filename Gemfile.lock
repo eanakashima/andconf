@@ -28,6 +28,8 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
+    bugsnag (2.8.7)
+      multi_json (~> 1.0)
     builder (3.2.2)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -140,6 +142,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bugsnag
   coffee-rails (~> 4.0.0)
   dotenv-rails
   haml-rails

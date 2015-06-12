@@ -11,6 +11,9 @@ gem 'haml-rails'
 gem 'rails_12factor', group: :production
 gem 'stripe'
 
+# Just testing this out for now.
+gem "bugsnag"
+
 group :development do
   gem 'quiet_assets'
   gem 'spring'
