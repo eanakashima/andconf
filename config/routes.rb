@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   resource :donations, only: [:show, :create]
 
   get '/scholarships', to: redirect("https://docs.google.com/forms/d/1UUp6415niIzBoMxmhk6mxRfmgCfO-1ioc8oEZaNCt4o")
+  get '/apply', to: redirect("http://goo.gl/forms/vJcWWyRykr")
 end
