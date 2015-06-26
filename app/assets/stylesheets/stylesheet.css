@@ -384,7 +384,8 @@ img.sponsor-logo-mailkimp {
 }
 img.sponsor-logo-c5 { width: 105px; padding: 0 1rem 0 0; }
 img.sponsor-logo-omada { width: 135px; padding: 0 1rem 0 0;}
-img.sponsor-logo-stripe { width: 60px; padding: 0.2rem 0 0 0; }
+img.sponsor-logo-stripe { width: 60px; padding: 0.1rem 0 0 0; }
+img.sponsor-logo-bugsnag { width: 125px; padding: 0.2rem 0 0 0; }
 
 .site-footer {
   padding-top: 2rem;
