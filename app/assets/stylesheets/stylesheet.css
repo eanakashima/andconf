@@ -380,7 +380,7 @@ img.sponsor-logo-c5 { width: 135px; padding: 0 0 0.6rem 0.4rem; }
 img.sponsor-logo-pivotal { width: 135px; padding: 0 0 1.2rem 0.4rem;}
 img.sponsor-logo-omada { width: 135px; padding: 0 0 1.5rem 0;}
 img.sponsor-logo-stripe { display: inline; width: 60px; padding: 0.1rem 0 1rem 0; }
-img.sponsor-logo-bugsnag { display: inline; width: 125px; padding: 0.2rem 0 1rem 0; }
+img.sponsor-logo-bugsnag { display: inline; width: 125px; padding: 0.2rem 0 1rem   0; }
 img.sponsor-logo-makersquare { width: 115px; padding: 0.2rem 0 1rem 0; }
 
 .site-footer {
