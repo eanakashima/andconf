@@ -36,6 +36,7 @@
 :javascript
   var handler = StripeCheckout.configure({
     key: "#{ENV['STRIPE_PUBLISHABLE_KEY']}",
+    zipCode: true,
     token: function(token, args) {
       var tokenInput = $("<input type='hidden' name='token'>").val(token.id);
       var emailInput = $("<input type=hidden name=stripe_email />").val(token.email);
