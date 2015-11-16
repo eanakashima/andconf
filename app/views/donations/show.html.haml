@@ -1,6 +1,5 @@
 - content_for :title_tag, "Donate to &:conf (AndConf)"
 
-%script{ src: "https://checkout.stripe.com/checkout.js" }
 %script{ src: "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" }
 
 %section.main-content
@@ -15,42 +14,4 @@
   %h2 Support &:conf
 
   %p
-    We are seeking sponsors to offset venue, food, lodging, and transportation costs, so
-    that a more diverse group of engineers can participate.
-  %p
-    Full-price tickets will be sold at-cost for ~$300 each, which will cover three nights of
-    lodging and eight meals at St. Dorothy's Rest.
-  %p
-    Sponsorship money will be used to decrease the overall cost of tickets as well as
-    provide several full-scholarship tickets and travel stipends to a diverse group of
-    attendees who might not otherwise be able to make it to &:conf.
-  %h3.m0 Support &:conf
-
-  = form_tag donations_path, method: "post", class: "donation-form" do
-    = label_tag "donation_amount" do
-      = text_field_tag "donation_amount", "", placeholder: "100", type: "number", min: 1, max: 10000, class: "donate-field js-stripe-amount"
-      dollars
-      %br
-    %button.js-stripe-button.mt10.btn-green Pay via Stripe
-
-:javascript
-  var handler = StripeCheckout.configure({
-    key: "#{ENV['STRIPE_PUBLISHABLE_KEY']}",
-    zipCode: true,
-    token: function(token, args) {
-      var tokenInput = $("<input type='hidden' name='token'>").val(token.id);
-      var emailInput = $("<input type=hidden name=stripe_email />").val(token.email);
-      $(".donation-form").append(tokenInput).append(emailInput).submit();
-      $(".donation-form").text("Updating...").attr("disabled", "disabled");
-    }
-  });
-
-  $('.js-stripe-button').on('click', function(e) {
-    handler.open({
-      name: '&:conf',
-      description: 'Donation',
-      allowRememberMe: false,
-      amount: $('.js-stripe-amount').val() * 100
-    });
-    e.preventDefault();
-  });
+    We'll be looking for 2016 sponsors soon. Stay tuned!
