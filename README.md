@@ -1,6 +1,8 @@
+# 👋 The AndConf 2016 website is over at [ampersandindustries/andooo](https://github.com/ampersandindustries/andooo)
+
 # &:conf
 
-This is the Rails app for the &:conf (And Conf) conference. 
+Deprecated: This is the Rails app for the &:conf (AndConf) conference. 
 
 ## Where is it?
 
